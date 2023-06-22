@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB62B4192A40C52C0081B426 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62B4182A40C52C0081B426 /* Action.swift */; };
+		EB62B41B2A40C5C40081B426 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62B41A2A40C5C40081B426 /* Business.swift */; };
+		EB62B41D2A40C6580081B426 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62B41C2A40C6580081B426 /* MapController.swift */; };
+		EB94CCB72A44BA5F00385046 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94CCB62A44BA5F00385046 /* LocationManager.swift */; };
 		EBE2AB452A40C3760043A5F2 /* ExploreMapkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2AB442A40C3760043A5F2 /* ExploreMapkitApp.swift */; };
 		EBE2AB472A40C3760043A5F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2AB462A40C3760043A5F2 /* ContentView.swift */; };
 		EBE2AB492A40C3770043A5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE2AB482A40C3770043A5F2 /* Assets.xcassets */; };
@@ -14,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB62B4182A40C52C0081B426 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		EB62B41A2A40C5C40081B426 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		EB62B41C2A40C6580081B426 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		EB94CCB52A44B96B00385046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB94CCB62A44BA5F00385046 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EBE2AB412A40C3760043A5F2 /* ExploreMapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreMapkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE2AB442A40C3760043A5F2 /* ExploreMapkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreMapkitApp.swift; sourceTree = "<group>"; };
 		EBE2AB462A40C3760043A5F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +60,13 @@
 		EBE2AB432A40C3760043A5F2 /* ExploreMapkit */ = {
 			isa = PBXGroup;
 			children = (
+				EB94CCB52A44B96B00385046 /* Info.plist */,
 				EBE2AB442A40C3760043A5F2 /* ExploreMapkitApp.swift */,
 				EBE2AB462A40C3760043A5F2 /* ContentView.swift */,
+				EB62B4182A40C52C0081B426 /* Action.swift */,
+				EB94CCB62A44BA5F00385046 /* LocationManager.swift */,
+				EB62B41C2A40C6580081B426 /* MapController.swift */,
+				EB62B41A2A40C5C40081B426 /* Business.swift */,
 				EBE2AB482A40C3770043A5F2 /* Assets.xcassets */,
 				EBE2AB4A2A40C3770043A5F2 /* Preview Content */,
 			);
@@ -138,6 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE2AB472A40C3760043A5F2 /* ContentView.swift in Sources */,
+				EB62B41B2A40C5C40081B426 /* Business.swift in Sources */,
+				EB94CCB72A44BA5F00385046 /* LocationManager.swift in Sources */,
+				EB62B4192A40C52C0081B426 /* Action.swift in Sources */,
+				EB62B41D2A40C6580081B426 /* MapController.swift in Sources */,
 				EBE2AB452A40C3760043A5F2 /* ExploreMapkitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +287,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ExploreMapkit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExploreMapkit/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +317,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ExploreMapkit/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExploreMapkit/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
