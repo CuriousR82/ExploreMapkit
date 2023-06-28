@@ -14,10 +14,10 @@ struct BusinessView: View {
         VStack {
             HStack(alignment: .top) {
                 VStack(alignment: .leading) {
-                    Text(mapController.selectBusinessName)
+                    Text(mapController.selectedBusinessName)
                         .font(.title)
-                        
-                    Text(mapController.selectBusinessPlacemark)
+                    
+                    Text(mapController.selectedBusinessPlacemark)
                 }
                 
                 Spacer()
@@ -28,24 +28,24 @@ struct BusinessView: View {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundColor(.secondary)
                 }
-                
-                HStack {
-                    ForEach(mapController.actions) { action in
-                        Button {
-                            action.handler()
-                        } label: {
-                            VStack {
-                                Image(systemName: action.image)
-                                Text(action.title)
-                            }
-                            .frame(maxWidth: .infinity)
+            }
+            
+            HStack {
+                ForEach(mapController.actions) { action in
+                    Button {
+                        action.handler()
+                    } label: {
+                        VStack {
+                            Image(systemName: action.image)
+                            Text(action.title)
                         }
-                        .buttonStyle(.bordered)
+                        .frame(maxWidth: .infinity)
                     }
+                    .buttonStyle(.bordered)
                 }
             }
-            .padding()
         }
+        .padding()
     }
 }
 
